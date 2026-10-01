@@ -1,0 +1,21 @@
+<svg viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="240" rx="16" fill="#052e16"/>
+  <!-- Shop Building -->
+  <rect x="60" y="90" width="280" height="130" fill="#f0fdf4" rx="4"/>
+  <!-- Striped Green Canopy Awning -->
+  <path d="M40 90L70 45H330L360 90H40Z" fill="#15803d"/>
+  <!-- White stripes on awning -->
+  <polygon points="90,45 115,45 130,90 100,90" fill="#ffffff" opacity="0.9"/>
+  <polygon points="170,45 195,45 205,90 180,90" fill="#ffffff" opacity="0.9"/>
+  <polygon points="250,45 275,45 285,90 260,90" fill="#ffffff" opacity="0.9"/>
+  <!-- Scalloped bottom -->
+  <path d="M40 90 Q60 105 80 90 Q100 105 120 90 Q140 105 160 90 Q180 105 200 90 Q220 105 240 90 Q260 105 280 90 Q300 105 320 90 Q340 105 360 90" fill="#166534"/>
+  <!-- Fruit baskets -->
+  <rect x="90" y="140" width="60" height="40" rx="6" fill="#d97706"/>
+  <circle cx="110" cy="135" r="9" fill="#ef4444"/>
+  <circle cx="130" cy="135" r="9" fill="#f59e0b"/>
+  <circle cx="120" cy="125" r="9" fill="#22c55e"/>
+  <!-- Open Doorway -->
+  <rect x="230" y="120" width="70" height="100" rx="4" fill="#14532d"/>
+  <text x="265" y="160" font-family="sans-serif" font-weight="900" font-size="12" fill="#ffffff" text-anchor="middle">OPEN</text>
+</svg>

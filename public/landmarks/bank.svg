@@ -1,0 +1,18 @@
+<svg viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="240" rx="16" fill="#7c2d12"/>
+  <!-- Bank Structure -->
+  <rect x="60" y="70" width="280" height="150" rx="8" fill="#ea580c"/>
+  <rect x="50" y="50" width="300" height="26" rx="6" fill="#c2410c"/>
+  <!-- Signboard -->
+  <rect x="90" y="62" width="220" height="28" rx="4" fill="#ffffff"/>
+  <text x="200" y="82" font-family="sans-serif" font-weight="900" font-size="15" fill="#ea580c" text-anchor="middle" letter-spacing="1">ICICI BANK</text>
+  <!-- Columns -->
+  <rect x="90" y="105" width="22" height="100" rx="4" fill="#ffedd5"/>
+  <rect x="150" y="105" width="22" height="100" rx="4" fill="#ffedd5"/>
+  <rect x="228" y="105" width="22" height="100" rx="4" fill="#ffedd5"/>
+  <rect x="288" y="105" width="22" height="100" rx="4" fill="#ffedd5"/>
+  <!-- Glass Doors -->
+  <rect x="180" y="125" width="40" height="80" rx="4" fill="#fed7aa" stroke="#c2410c" stroke-width="3"/>
+  <circle cx="190" cy="165" r="3" fill="#c2410c"/>
+  <circle cx="210" cy="165" r="3" fill="#c2410c"/>
+</svg>

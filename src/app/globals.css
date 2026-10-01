@@ -1,4 +1,178 @@
 @import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+/* ---------------------------------------------------------------------------
+   Leaflet chrome — polished navigation-app styling
+   --------------------------------------------------------------------------- */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  background: #e8eef7;
+  font-family: inherit;
+  z-index: 0;
+}
+
+/* OSM attribution must stay readable and visible */
+.leaflet-control-attribution {
+  background: rgba(255, 255, 255, 0.86) !important;
+  color: #334155;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 9999px 0 0 0;
+  backdrop-filter: blur(4px);
+}
+
+.leaflet-control-attribution a {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+.leaflet-tooltip {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.18);
+  padding: 6px 10px;
+  font-size: 12px;
+}
+
+/* Custom Landmark DivIcon Styling */
+.custom-landmark-pin,
+.custom-hazard-pin,
+.user-gps-divicon {
+  background: transparent;
+  border: none;
+}
+
+.custom-landmark-pin-inner,
+.custom-hazard-pin-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.25));
+  transition: transform 0.2s ease;
+}
+
+.landmark-pin-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+  line-height: 1;
+  border: 3px solid #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.landmark-pin-circle.is-current {
+  width: 48px;
+  height: 48px;
+  font-size: 22px;
+  border-width: 4px;
+  border-color: #0f172a;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.35), 0 4px 10px rgba(0, 0, 0, 0.35);
+}
+
+.landmark-pin-circle.is-visited {
+  border-color: #10b981;
+}
+
+.landmark-pin-label {
+  margin-top: 3px;
+  background: rgba(15, 23, 42, 0.88);
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 800;
+  padding: 2px 7px;
+  border-radius: 9999px;
+  white-space: nowrap;
+  letter-spacing: 0.01em;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  max-width: 110px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.landmark-pin-label.is-current {
+  background: #1d4ed8;
+  border-color: #ffffff;
+}
+
+.landmark-pin-label.hazard {
+  background: #7c2d12;
+  font-size: 9px;
+}
+
+.hazard-pin-circle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 1;
+  border: 2px solid #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.user-gps-pulse {
+  width: 22px;
+  height: 22px;
+  background-color: #2563eb;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.4);
+  animation: pulse-ring 2s infinite;
+}
+
+@keyframes pulse-ring {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 14px rgba(37, 99, 235, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 99, 235, 0);
+  }
+}
+
+/* Off-route line gets a gentle breathing pulse so the red state is unmistakable */
+.route-line-off-route {
+  animation: off-route-pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes off-route-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.55;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   Accessibility: honour the OS-level reduced motion preference
+   --------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .leaflet-zoom-animated {
+    transition: none !important;
+  }
+}
 
 :root {
   --background: #ffffff;

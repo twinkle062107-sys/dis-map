@@ -1,0 +1,19 @@
+<svg viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="240" rx="16" fill="#1e3a8a"/>
+  <!-- Metro Entrance Arch -->
+  <path d="M70 240V90C70 60 100 40 200 40C300 40 330 60 330 90V240" stroke="#60a5fa" stroke-width="14" stroke-linecap="round"/>
+  <!-- Glass Canopy -->
+  <path d="M90 100L200 65L310 100" stroke="#93c5fd" stroke-width="8"/>
+  <!-- Metro Pillar Blue -->
+  <rect x="110" y="110" width="30" height="130" rx="4" fill="#3b82f6"/>
+  <rect x="260" y="110" width="30" height="130" rx="4" fill="#3b82f6"/>
+  <!-- Station Round Emblem -->
+  <circle cx="200" cy="115" r="38" fill="#2563eb" stroke="#ffffff" stroke-width="6"/>
+  <!-- Metro M -->
+  <path d="M182 130V102L200 120L218 102V130" stroke="#ffffff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Underway Lights -->
+  <circle cx="150" cy="80" r="6" fill="#fef08a"/>
+  <circle cx="250" cy="80" r="6" fill="#fef08a"/>
+  <rect x="140" y="200" width="120" height="12" rx="4" fill="#60a5fa"/>
+  <text x="200" y="180" font-family="sans-serif" font-weight="900" font-size="16" fill="#ffffff" text-anchor="middle" letter-spacing="2">GATE 2 • BLUE METRO</text>
+</svg>

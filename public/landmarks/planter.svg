@@ -1,0 +1,12 @@
+<svg viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="240" rx="16" fill="#3b0764"/>
+  <rect x="70" y="130" width="260" height="80" rx="10" fill="#a855f7" stroke="#d8b4fe" stroke-width="4"/>
+  <text x="200" y="175" font-family="sans-serif" font-weight="900" font-size="16" fill="#ffffff" text-anchor="middle">LAVENDER PLANTER</text>
+  <!-- Flowers -->
+  <circle cx="120" cy="100" r="22" fill="#c084fc"/>
+  <circle cx="120" cy="100" r="8" fill="#fef08a"/>
+  <circle cx="200" cy="85" r="28" fill="#e879f9"/>
+  <circle cx="200" cy="85" r="10" fill="#fef08a"/>
+  <circle cx="280" cy="100" r="22" fill="#c084fc"/>
+  <circle cx="280" cy="100" r="8" fill="#fef08a"/>
+</svg>
